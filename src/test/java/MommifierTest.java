@@ -21,4 +21,11 @@ public class MommifierTest {
         String string="qqqqqqaeiou";
         assertEquals("qqqqqqaeiou", mommifier.getNewString(string));
     }
+
+    @Test
+    void should_return_string_when_owel_more_than_third_of_percentage (){
+        String string="qaeiouaeiou";
+        assertEquals("qaeioumommyaeiou", mommifier.getNewString(string));
+    }
+
 }
